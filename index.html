@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Fruta & Fruto</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="assets/img/logo.jpg" alt="logo">
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item"><a class="menu__link menu--ativo" href="#">Início</a></li>
+                <li class="menu__item"><a class="menu__link" href="#receitas">Receita</a></li>
+                <li class="menu__item"><a class="menu__link" href="#quem-somos">Quem Somos</a></li>
+                <!-- <li class="menu__item"><a class="menu__link" href="#">Comunidade</a></li> -->
+                <li class="menu__item--separador"></li>
+                <li class="menu__item"><a class="menu__link menu--ativo" id="open-modal"  href="#">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="fade" class="hide"></div>
+
+        <div id="modal" class="hide">   
+            <div class="modal-header">
+                <img src="assets/img/logo.jpg">
+                <button id="close-modal">X</button>
+            </div>    
+            <div id="modal-body">
+                <form>
+                    <label for="login">Login</label>
+                    <input type="text" name="login" id="login" placeholder="Login" required>
+                    <label for="password">Senha</label>
+                    <input type="pass" name="password" id="password" placeholder="Senha" required>
+                    <button id="logar">Logar</button>
+                </form>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner__imagem"></div>
+            <h2 class="banner__titulo">Reaproveite melhor os alimentos!!</h2>
+        </section>
+        <section class="sobre">
+            <h3 class="sobre__titulo">Receitas para economizar e ganhar saúde</h3>
+            <p class="sobre__descricao">
+                Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade
+            </p>
+        </section>
+        <section id="receitas" class="receitas">
+            <div class="receita">
+                <img src="assets/img/receitas/tigela-de-abacate.jpg" class="receita__imagem" alt="Tigela de Abacate">
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Kiwi</h4>
+                    <p class="receita__descricao">
+                       Aproveite nossas frutas frescas, As melhores e mais suculentas é só aqui.
+                    </p>
+                    <button class="receita__botao">Ver receita</button>
+                </div>
+            </div>
+            <div class="receita">
+                <img src="assets/img/receitas/tigela-de-abacate.jpg" class="receita__imagem" alt="Tigela de Abacate">
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">TIJELA DE ABACATE</h4>
+                    <p class="receita__descricao">
+                        Aproveite nossas frutas frescas, As melhores e mais suculentas é só aqui.
+                    </p>
+                    <button class="receita__botao">Ver receita</button>
+                </div>
+            </div>
+            <div class="receita">
+                <img src="assets/img/receitas/tigela-de-abacate.jpg" class="receita__imagem" alt="Tigela de Abacate">
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">PRATO ORIENTAL</h4>
+                    <p class="receita__descricao">
+                        Aproveite nossas frutas frescas, As melhores e mais suculentas é só aqui.
+                    </p>
+                    <button class="receita__botao">Ver receita</button>
+                </div>
+            </div>
+            <div class="receita">
+                <img src="assets/img/receitas/tigela-de-abacate.jpg" class="receita__imagem" alt="Tigela de Abacate">
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">PIMENTOES</h4>
+                    <p class="receita__descricao">
+                        Aproveite nossas frutas frescas, As melhores e mais suculentas é só aqui.
+                    </p>
+                    <button class="receita__botao">Ver receita</button>
+                </div>
+            </div>
+            <div class="receita">
+                <img src="assets/img/receitas/beterrabas-assadas.jpg" class="receita__imagem" alt="Tigela de Abacate">
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">BETERRABAS ASSADAS</h4>
+                    <p class="receita__descricao">
+                        Aproveite nossas frutas frescas, As melhores e mais suculentas é só aqui.
+                    </p>
+                    <button class="receita__botao">Ver receita</button>
+                </div>
+            </div>
+            <div class="receita">
+                <img src="assets/img/receitas/tigela-de-abacate.jpg" class="receita__imagem" alt="Tigela de Abacate">
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">MIX DE VEGETAIS</h4>
+                    <p class="receita__descricao">
+                       Aproveite nossas frutas frescas, As melhores e mais suculentas é só aqui.
+                    </p>
+                    <button class="receita__botao">Ver receita</button>
+                </div>
+            </div>
+        </section>
+        <section id="quem-somos" class="quem-somos">
+            <h3 class="quem-somos__titulo">Quem Somos</h3>
+            <p class="quem-somos__descricao">Conheça a comunidade por trás da iniciativa</p>
+            <div class="pessoas">
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--roberta"></div>
+                    <span class="pessoa__nome">Mônica</span>
+                    <span class="pessoa__funcao">Nutricionista</span>
+                </div>
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--marcela"></div>
+                    <span class="pessoa__nome">Roberta</span>
+                    <span class="pessoa__funcao">Nutricionista</span>
+                </div>
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--andreia"></div>
+                    <span class="pessoa__nome">Jessika</span>
+                    <span class="pessoa__funcao">Nutricionista</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        E-mail: Frutasefrutos@gmail.com.br
+        whatsaap: (65) 65993252124
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
